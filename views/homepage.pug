@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Custom Objects
+  body
+    a(href="/update-cobj") Add to this table
+    h1 Custom Objects Table
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Email
+          th Address
+      tbody
+        each record in crmRecords
+          tr
+            td= record.properties.name
+            td= record.properties.email
+            td= record.properties.address
